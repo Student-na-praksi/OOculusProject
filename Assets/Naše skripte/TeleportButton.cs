@@ -10,4 +10,5 @@ public class TeleportButton : MonoBehaviour
         Debug.Log("Teleport function called. Loading scene: " + sceneName);
         SceneManager.LoadScene(sceneName);
     }
+    //testiramo
 }
