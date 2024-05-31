@@ -6,7 +6,7 @@ public class SceneLoaderOnTouch : MonoBehaviour
     [SerializeField]
     private GameObject target; // Replace with the tag of the target object
     [SerializeField]
-    private string sceneName = "Kristjan"; // Replace with the name of the scene you want to load
+    public string sceneName; // Replace with the name of the scene you want to load
 
     // For triggers (requires "Is Trigger" to be enabled in the collider)
     private void OnTriggerEnter(Collider other)

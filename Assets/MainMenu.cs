@@ -5,11 +5,26 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject FirstPersonController;
     public GameObject Canvas;
-    private bool isPaused = false;
+    private bool isPaused = true;
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.None;
+        if (PlayerPrefs.GetInt("FirstLoad") == 0)
+        {
+            PlayerPrefs.SetInt("FirstLoad", 1);
+            FirstPersonController.SetActive(false);
+            Canvas.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            isPaused = true;
+        }
+        else
+        {
+            FirstPersonController.SetActive(true);
+            Canvas.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            isPaused = false;
+        }
+        
     }
     void Update()
     {
