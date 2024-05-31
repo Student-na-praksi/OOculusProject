@@ -5,18 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Default Scenes/SampleScene.unity
-    guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 1
     path: "Assets/Scenes/Umetni\u0161ke scene/Galerija/Galerija.unity"
     guid: 464f708777b504d40b94138e8f9b21f5
   - enabled: 1
     path: "Assets/Scenes/Umetni\u0161ke scene/Kristjan/Kristjan.unity"
     guid: cdbba6aa96e390b4e83d73c7ae1ad7cb
-  - enabled: 0
-    path: Assets/Scenes/Default Scenes/BasicScene.unity
-    guid: 4e9fef26e6adb88479ad1b9834a32d94
   - enabled: 1
     path: "Assets/Scenes/Umetni\u0161ke scene/Filip/Filip.unity"
     guid: ee4406ce7d7ce784fa1615417e970816
@@ -27,9 +21,10 @@ EditorBuildSettings:
     path: "Assets/Scenes/Umetni\u0161ke scene/Ana/Ana.unity"
     guid: c5068968e69b89a449dcc6c48d9c3e2b
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 525ca92fdaa1c4346973103787b2f4a2, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 9bec1ce6a03ccba4b9a8215241b32e63, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: a49cadc1a815591479693b955ccf08c1, type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1a4c68ca72a83449f938d669337cb305, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a9a6963505ddf7f4d886008c6dc86122, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 12636d4fed379ba4285942c6292abf35, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a6ab4634b36fb6944b50ea2a3aea1fa4, type: 2}
