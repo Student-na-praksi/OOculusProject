@@ -9,9 +9,10 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
-        if (PlayerPrefs.GetInt("FirstLoad") == 0)
+        Debug.Log(PlayerPrefs.GetString("isThisFirstLoad"));
+        if (PlayerPrefs.GetString("isThisFirstLoad") != "False")
         {
-            PlayerPrefs.SetInt("FirstLoad", 1);
+            PlayerPrefs.SetString("isThisFirstLoad", "False");
             FirstPersonController.SetActive(false);
             Canvas.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
@@ -51,6 +52,8 @@ public class MainMenu : MonoBehaviour
 
     public void QuitButton()
     {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
         Application.Quit();
     }
 }
